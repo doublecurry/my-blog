@@ -9,7 +9,7 @@ tags:
   - Agents
 ---
 
-# How I Use Every Claude Code Feature: A Comprehensive Guide
+# How I Use Every Claude Code Feature
 
 As a heavy user of [Claude Code](https://code.claude.com/docs/en/overview), I run it in a VM a few times a week for personal projects, often using `--dangerously-skip-permissions` to let it move freely. At work, my team builds AI IDE rules where code generation alone consumes billions of tokens monthly.
 
