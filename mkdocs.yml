@@ -46,7 +46,7 @@ theme:
     - content.code.annotate # 支持代码注释标记
 
 extra_css:
-  - stylesheets/extra.css?v=20260520-1
+  - stylesheets/extra.css?v=20260520-2
 
 plugins:
   - i18n:

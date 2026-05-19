@@ -768,6 +768,7 @@ article a:focus {
   display: grid;
   gap: 0;
   margin: 0;
+  width: 100%;
 }
 
 .md-typeset .article-row {
@@ -778,6 +779,7 @@ article a:focus {
   text-decoration: none;
   border-top: 1px solid var(--md-default-fg-color--lightest);
   transition: border-color 0.24s ease, padding-left 0.24s ease;
+  width: 100%;
 }
 
 .md-typeset .article-row:first-child {
@@ -796,19 +798,24 @@ article a:focus {
 }
 
 .md-typeset .article-row span {
+  display: block;
   color: var(--md-accent-fg-color);
   font-size: 0.62rem;
+  line-height: 1.5;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
 .md-typeset .article-row strong {
+  display: block;
   color: var(--md-default-fg-color);
   font-size: 1.05rem;
   font-weight: 500;
+  line-height: 1.55;
 }
 
 .md-typeset .article-row small {
+  display: block;
   color: var(--md-default-fg-color--light);
   font-size: 0.78rem;
   line-height: 1.65;
@@ -839,9 +846,13 @@ article a:focus {
 .md-typeset a.article-row,
 .md-typeset a.article-row:link,
 .md-typeset a.article-row:visited {
+  display: grid !important;
+  gap: 0.3rem;
   margin: 0;
   padding: 1rem 0;
+  width: 100%;
   background-color: transparent;
+  color: inherit !important;
   text-decoration: none !important;
   border-top: 1px solid var(--md-default-fg-color--lightest);
   border-right: 0;
@@ -870,6 +881,27 @@ article a:focus {
 
 .md-typeset a.article-row:focus:not(:focus-visible) {
   outline: none;
+}
+
+.md-typeset a.article-row span,
+.md-typeset a.article-row:link span,
+.md-typeset a.article-row:visited span {
+  display: block;
+  color: var(--md-accent-fg-color);
+}
+
+.md-typeset a.article-row strong,
+.md-typeset a.article-row:link strong,
+.md-typeset a.article-row:visited strong {
+  display: block;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset a.article-row small,
+.md-typeset a.article-row:link small,
+.md-typeset a.article-row:visited small {
+  display: block;
+  color: var(--md-default-fg-color--light);
 }
 
 /* ---------- Content links: same restrained style as copyright links ---------- */

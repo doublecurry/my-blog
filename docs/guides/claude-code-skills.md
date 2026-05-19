@@ -9,7 +9,7 @@ tags:
   - Developer Workflow
 ---
 
-# Mastering Claude Code: A Guide to Anthropic's Internal Skill Ecosystem
+# A Guide to Anthropic's Internal Skill Ecosystem
 
 Claude Code is a powerful AI-driven programming terminal, but its true potential lies in its **Skills** system. Many developers treat Skills merely as simple Markdown prompt files, but that significantly underestimates their capability. In reality, a Skill is a comprehensive context-engineering framework and workflow orchestrator.
 
