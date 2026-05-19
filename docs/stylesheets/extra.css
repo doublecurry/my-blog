@@ -1,0 +1,710 @@
+/* ============================================================
+   Jamz's Space —— 简约 · 唯美
+   字体：霞鹜文楷 Screen（兼具书法韵味与可读性）
+   ============================================================ */
+
+@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.7.0/style.css");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* ---------- 字体变量 ---------- */
+:root {
+  --md-text-font: "EB Garamond", "LXGW WenKai Screen", "Noto Serif SC",
+    -apple-system, BlinkMacSystemFont, "Segoe UI", serif;
+  --md-code-font: "JetBrains Mono", "SF Mono", Consolas, Menlo, monospace;
+}
+
+/* ---------- 浅色：米白 + 墨黑 + 古铜 ---------- */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #fafaf7;
+  --md-default-fg-color: #2b2b2b;
+  --md-default-fg-color--light: #5a5a5a;
+  --md-default-fg-color--lighter: #8a8a8a;
+  --md-default-fg-color--lightest: #e6e3dc;
+
+  --md-primary-fg-color: #fafaf7;
+  --md-primary-fg-color--light: #fafaf7;
+  --md-primary-fg-color--dark: #fafaf7;
+  --md-primary-bg-color: #2b2b2b;
+  --md-primary-bg-color--light: #5a5a5a;
+
+  --md-accent-fg-color: #8b6f47;
+  --md-accent-fg-color--transparent: rgba(139, 111, 71, 0.1);
+
+  --md-typeset-color: #2b2b2b;
+  --md-typeset-a-color: #8b6f47;
+
+  --md-code-bg-color: #f1efe9;
+  --md-code-fg-color: #3a3a3a;
+
+  --md-footer-fg-color: #5a5a5a;
+  --md-footer-fg-color--light: #5a5a5a;
+  --md-footer-fg-color--lighter: #8a8a8a;
+  --md-footer-bg-color: #fafaf7;
+  --md-footer-bg-color--dark: #f1efe9;
+}
+
+/* ---------- 深色：暖墨 + 米黄 + 浅金 ---------- */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #1c1c1c;
+  --md-default-fg-color: #e6e1d6;
+  --md-default-fg-color--light: #b8b4ac;
+  --md-default-fg-color--lighter: #888580;
+  --md-default-fg-color--lightest: #3a3835;
+
+  --md-primary-fg-color: #1c1c1c;
+  --md-primary-fg-color--light: #1c1c1c;
+  --md-primary-fg-color--dark: #1c1c1c;
+  --md-primary-bg-color: #e6e1d6;
+
+  --md-accent-fg-color: #c9a96a;
+  --md-accent-fg-color--transparent: rgba(201, 169, 106, 0.12);
+
+  --md-typeset-color: #e6e1d6;
+  --md-typeset-a-color: #c9a96a;
+
+  --md-code-bg-color: #262626;
+  --md-code-fg-color: #d6d2c8;
+
+  --md-footer-fg-color: #e6e1d6;
+  --md-footer-fg-color--light: #b8b4ac;
+  --md-footer-fg-color--lighter: #888580;
+  --md-footer-bg-color: #1c1c1c;
+  --md-footer-bg-color--dark: #171717;
+}
+
+/* ---------- 基础排版 ---------- */
+body {
+  font-family: var(--md-text-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1, "liga" 1, "palt" 1;
+  letter-spacing: 0.01em;
+}
+
+.md-typeset {
+  font-size: 0.82rem;
+  line-height: 1.85;
+  color: var(--md-typeset-color);
+}
+
+.md-typeset p {
+  margin: 1.25em 0;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  hyphens: auto;
+}
+
+/* ---------- 标题：克制的层级感 ---------- */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-family: var(--md-text-font);
+  color: var(--md-default-fg-color);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.md-typeset h1 {
+  font-size: 1.95rem;
+  font-weight: 400;
+  margin: 2.4rem 0 1.6rem;
+  letter-spacing: 0.04em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h2 {
+  font-size: 1.4rem;
+  margin: 2.2rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset h3 {
+  font-size: 1.15rem;
+  margin: 1.6rem 0 0.8rem;
+}
+
+.md-typeset h4 {
+  font-size: 0.95rem;
+  margin: 1.3rem 0 0.6rem;
+}
+
+/* ---------- 文章元信息 ---------- */
+.article-meta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.9rem;
+  margin: -0.8rem 0 2rem;
+  padding: 0.2rem 0;
+  color: var(--md-default-fg-color--lighter);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.article-meta::before {
+  content: "";
+  width: 1.8rem;
+  height: 1px;
+  background: var(--md-default-fg-color--lightest);
+}
+
+.article-meta__item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+}
+
+.article-meta__label {
+  color: var(--md-default-fg-color--light);
+}
+
+.article-meta time,
+.article-meta [data-page-views] {
+  color: var(--md-accent-fg-color);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- 顶部 Header：去除阴影，纯净边线 ---------- */
+.md-header {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  box-shadow: none;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  transition: background-color 0.4s ease;
+}
+
+.md-header[data-md-state="shadow"] {
+  box-shadow: none;
+}
+
+.md-header__title {
+  font-family: var(--md-text-font);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+}
+
+.md-header__topic:first-child {
+  font-weight: 500;
+}
+
+/* Logo：内联 SVG，颜色跟随主题 */
+.md-header__button.md-logo {
+  margin: 0.2rem;
+  padding: 0.4rem;
+  color: var(--md-default-fg-color);
+  transition: transform 0.4s ease, color 0.3s ease;
+}
+
+.md-header__button.md-logo:hover {
+  color: var(--md-accent-fg-color);
+  transform: rotate(-8deg);
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: none;
+  stroke: currentColor;
+  color: inherit;
+}
+
+/* 深色模式：logo 用更亮的米黄，避免与深背景糊在一起 */
+[data-md-color-scheme="slate"] .md-header__button.md-logo {
+  color: #e6e1d6;
+}
+
+[data-md-color-scheme="slate"] .md-header__button.md-logo:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* ---------- 顶部导航 Tabs：极简 ---------- */
+.md-tabs {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* Tabs 所有状态强制走主题色，覆盖 Material 注入的 primary（默认靛蓝） */
+.md-tabs a,
+.md-tabs a:link,
+.md-tabs a:visited,
+.md-tabs__link,
+.md-tabs__link:link,
+.md-tabs__link:visited,
+.md-tabs__link--active,
+.md-tabs__link--active:link,
+.md-tabs__link--active:visited,
+.md-tabs__link[aria-current],
+.md-tabs__link[aria-current="page"],
+.md-tabs__item--active > .md-tabs__link {
+  color: var(--md-default-fg-color) !important;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.md-tabs__link {
+  opacity: 0.55;
+  margin-top: 0.6rem;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link:focus,
+.md-tabs__link--active,
+.md-tabs__link[aria-current="page"],
+.md-tabs__item--active > .md-tabs__link {
+  opacity: 1;
+}
+
+/* ---------- 内容区：聚焦阅读 ---------- */
+.md-main__inner {
+  margin-top: 1.5rem;
+}
+
+.md-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.md-content__inner {
+  padding: 1rem 1.5rem 3rem;
+}
+
+.md-content__inner::before {
+  display: none;
+}
+
+/* ---------- 侧栏 + 页内目录：统一低存在感 ---------- */
+.md-sidebar {
+  font-size: 0.74rem;
+}
+
+.md-nav {
+  font-family: var(--md-text-font);
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* 主标题 & TOC 标题（如 "Table of contents"） */
+.md-nav__title {
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+  text-transform: uppercase;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* 所有层级链接默认样式（含一级 / 二级 / TOC） */
+.md-nav__link {
+  letter-spacing: 0.015em;
+  margin: 0.4em 0;
+  color: var(--md-default-fg-color--light);
+  transition: color 0.3s ease;
+}
+
+.md-nav__link:hover,
+.md-nav__link:focus {
+  color: var(--md-accent-fg-color);
+}
+
+/* 当前选中 / 阅读位置高亮，统一古铜色
+   注意：Material 同时使用 --active 类与 aria-current 属性，
+   后者特异性更高，必须一并覆盖才能盖掉默认 primary（靛蓝） */
+.md-nav__link--active,
+.md-nav__link--active:link,
+.md-nav__link--active:visited,
+.md-nav__link--passed,
+.md-nav__link[aria-current],
+.md-nav__link[aria-current="page"],
+.md-nav__link[aria-current="true"],
+.md-nav__item--active > .md-nav__link,
+.md-sidebar .md-nav__link--active,
+.md-nav--primary .md-nav__link--active,
+a.md-nav__link--active {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 500;
+}
+
+.md-nav__link--active code,
+.md-nav__link--passed code,
+.md-nav__link[aria-current="page"] code {
+  color: var(--md-accent-fg-color) !important;
+}
+
+/* 二级嵌套：略浅一层，体现层级 */
+.md-nav__item .md-nav__item .md-nav__link {
+  color: var(--md-default-fg-color--lighter);
+  font-size: 0.95em;
+}
+
+.md-nav__item .md-nav__item .md-nav__link:hover,
+.md-nav__item .md-nav__item .md-nav__link--active {
+  color: var(--md-accent-fg-color);
+}
+
+/* 右侧页内目录（Secondary / TOC） */
+.md-nav--secondary {
+  border-left: none;
+}
+
+.md-nav--secondary .md-nav__title {
+  background: transparent;
+  box-shadow: none;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-nav--secondary .md-nav__link {
+  color: var(--md-default-fg-color--lighter);
+}
+
+.md-nav--secondary .md-nav__link:hover,
+.md-nav--secondary .md-nav__link--active {
+  color: var(--md-accent-fg-color);
+}
+
+/* TOC 缩进竖线染色 */
+.md-nav--secondary .md-nav__list .md-nav__list {
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+  padding-left: 0.4rem;
+}
+
+/* ---------- 链接：留白下划线 + 主题色底 ---------- */
+.md-typeset a,
+.md-typeset a:link,
+.md-typeset a:visited,
+.md-typeset a:visited:hover,
+.md-typeset a:visited:focus,
+.md-content a,
+.md-content a:link,
+.md-content a:visited,
+article a,
+article a:link,
+article a:visited {
+  color: var(--md-typeset-a-color) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  border-radius: 2px;
+  padding: 0 0.1em;
+  margin: 0 -0.1em;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus,
+.md-content a:hover,
+.md-content a:focus,
+article a:hover,
+article a:focus {
+  color: var(--md-typeset-a-color) !important;
+  background-color: var(--md-accent-fg-color--transparent);
+  border-bottom-color: var(--md-typeset-a-color);
+  text-decoration: none !important;
+}
+
+/* ---------- 引用：素雅斜体 ---------- */
+.md-typeset blockquote {
+  border-left: 2px solid var(--md-accent-fg-color);
+  padding: 0.2em 0 0.2em 1.4em;
+  margin: 1.6em 0;
+  color: var(--md-default-fg-color--light);
+  font-style: italic;
+  background: transparent;
+}
+
+/* ---------- 代码：精致细腻 ---------- */
+.md-typeset code {
+  font-family: var(--md-code-font);
+  font-size: 0.82em;
+  padding: 0.12em 0.4em;
+  background-color: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+  border-radius: 3px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset pre > code {
+  font-size: 0.82em;
+  line-height: 1.65;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+}
+
+.md-typeset pre {
+  margin: 1.5em 0;
+}
+
+/* ---------- 表格：去框线，仅顶底 ---------- */
+.md-typeset table:not([class]) {
+  border: none;
+  border-top: 1px solid var(--md-default-fg-color--lighter);
+  border-bottom: 1px solid var(--md-default-fg-color--lighter);
+  box-shadow: none;
+  font-size: 0.78rem;
+  display: table;
+  width: 100%;
+}
+
+.md-typeset table:not([class]) th {
+  background: transparent;
+  border-bottom: 1px solid var(--md-default-fg-color--lighter);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.md-typeset table:not([class]) td {
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* ---------- 分割线：细线呼吸 ---------- */
+.md-typeset hr {
+  border: 0;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  margin: 2.6em auto;
+  width: 40%;
+}
+
+/* ---------- 列表：稍紧凑 ---------- */
+.md-typeset ul li,
+.md-typeset ol li {
+  margin: 0.4em 0;
+}
+
+/* ---------- 搜索框 ---------- */
+.md-search__input {
+  font-family: var(--md-text-font);
+  background-color: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
+}
+
+.md-search__input::placeholder {
+  color: var(--md-default-fg-color--lighter);
+}
+
+/* ---------- 主题切换按钮 ---------- */
+.md-header__button {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-header__button:hover {
+  color: var(--md-accent-fg-color);
+  opacity: 1;
+}
+
+/* ---------- Footer：浅纸笺式收尾 ---------- */
+.md-footer {
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0,
+      color-mix(in srgb, var(--md-accent-fg-color) 5%, transparent) 100%
+    ),
+    var(--md-default-bg-color);
+  color: var(--md-default-fg-color--light);
+}
+
+.md-footer-meta {
+  background: transparent;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-footer-meta__inner {
+  min-height: 4.25rem;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.md-copyright {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  line-height: 1.7;
+}
+
+.md-copyright__highlight {
+  color: inherit;
+}
+
+/* Footer 内文字链接：默认低调，悬停时才用主题古铜色
+   注意：必须用 !important 才能压回上面 .md-typeset a 的宽规则 */
+.md-footer a,
+.md-footer a:link,
+.md-footer a:visited,
+.md-footer .md-footer-meta.md-typeset a,
+.md-footer .md-footer-meta.md-typeset a:link,
+.md-footer .md-footer-meta.md-typeset a:visited,
+.md-copyright a,
+.md-copyright a:link,
+.md-copyright a:visited,
+.md-copyright__highlight a,
+.md-copyright__highlight a:link,
+.md-copyright__highlight a:visited {
+  color: var(--md-default-fg-color--light) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: color 0.3s ease, border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.md-footer a:hover,
+.md-footer a:focus,
+.md-footer .md-footer-meta.md-typeset a:hover,
+.md-footer .md-footer-meta.md-typeset a:focus,
+.md-copyright a:hover,
+.md-copyright a:focus,
+.md-copyright__highlight a:hover,
+.md-copyright__highlight a:focus {
+  color: var(--md-accent-fg-color) !important;
+  text-decoration: none !important;
+  border-bottom-color: var(--md-accent-fg-color);
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+.md-social {
+  padding: 0;
+  display: flex;
+  gap: 0.35rem;
+}
+
+.md-social__link {
+  width: 1.95rem;
+  height: 1.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--md-default-fg-color--light) !important;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 999px;
+  background-color: color-mix(
+    in srgb,
+    var(--md-default-bg-color) 82%,
+    white 18%
+  );
+  transition: color 0.3s ease, border-color 0.3s ease,
+    background-color 0.3s ease, transform 0.3s ease;
+}
+
+.md-footer .md-social__link,
+.md-footer .md-social__link:link,
+.md-footer .md-social__link:visited {
+  color: var(--md-default-fg-color--light) !important;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-footer .md-social__link:hover,
+.md-footer .md-social__link:focus,
+.md-footer .md-footer-meta.md-typeset .md-social__link:hover,
+.md-footer .md-footer-meta.md-typeset .md-social__link:focus {
+  color: var(--md-accent-fg-color) !important;
+  border-color: var(--md-accent-fg-color);
+  background-color: var(--md-accent-fg-color--transparent);
+  transform: translateY(-1px);
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-footer-meta__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+/* ---------- 返回顶部按钮 ---------- */
+.md-top {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  box-shadow: none;
+  font-family: var(--md-text-font);
+  letter-spacing: 0.05em;
+}
+
+.md-top:hover {
+  background-color: var(--md-accent-fg-color--transparent);
+  color: var(--md-accent-fg-color);
+}
+
+/* ---------- 选中文字 ---------- */
+::selection {
+  background-color: var(--md-accent-fg-color);
+  color: var(--md-default-bg-color);
+}
+
+/* ---------- 代码复制：按钮 + 提示弹框 ---------- */
+/* 复制按钮：低调，hover 时变古铜 */
+.md-clipboard {
+  color: var(--md-default-fg-color--lighter);
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.md-clipboard:hover,
+.md-clipboard:focus {
+  color: var(--md-accent-fg-color);
+}
+
+/* 复制成功提示弹框：强制反色，保证可读 */
+.md-dialog,
+.md-dialog[data-md-state="open"] {
+  background-color: var(--md-default-fg-color) !important;
+  color: var(--md-default-bg-color) !important;
+  border-radius: 4px;
+  font-family: var(--md-text-font);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+
+.md-dialog__inner,
+.md-dialog__inner * {
+  color: var(--md-default-bg-color) !important;
+}
+
+/* ---------- 滚动条：细而隐 ---------- */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--md-default-fg-color--lighter);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--md-default-fg-color--light);
+}
+
+/* ---------- 移动端微调 ---------- */
+@media screen and (max-width: 76.1875em) {
+  .md-content {
+    max-width: 100%;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.65rem;
+  }
+
+  .md-typeset h2 {
+    font-size: 1.25rem;
+  }
+}
