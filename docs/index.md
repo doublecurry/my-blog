@@ -28,10 +28,20 @@ description: A small personal notebook on coding, tools, and the occasional long
       <strong>The Evolution of Chain of Thought</strong>
       <small>From CoT prompting to search-like reasoning and agentic loops.</small>
     </a>
+    <a class="article-row" href="guides/claude-code-use/">
+      <span>Guide</span>
+      <strong>How I Use Every Claude Code Feature: A Comprehensive Guide</strong>
+      <small>A reference manual for daily-driving Claude Code — context, hooks, skills, MCP, the SDK, and GHA.</small>
+    </a>
     <a class="article-row" href="guides/claude-code-windows/">
       <span>Guide</span>
       <strong>Claude Code on Windows: A Complete Setup</strong>
       <small>Terminal, shell, and workflow polish for AI-assisted development on Windows.</small>
+    </a>
+    <a class="article-row" href="guides/claude-code-skills/">
+      <span>Guide</span>
+      <strong>Mastering Claude Code: Anthropic's Internal Skill Ecosystem</strong>
+      <small>How Anthropic's team uses Skills — file-system patterns, gotchas, and nine use cases.</small>
     </a>
   </div>
   <p class="home-more">More in <a href="essays/">Essays</a>, <a href="guides/">Guides</a>, or read <a href="about/">about this place</a>.</p>

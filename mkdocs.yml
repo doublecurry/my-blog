@@ -46,7 +46,7 @@ theme:
     - content.code.annotate # 支持代码注释标记
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra.css?v=20260520-1
 
 plugins:
   - i18n:
@@ -70,5 +70,7 @@ nav:
       - Chain of Thought Evolution: essays/cot-evolution.md
   - Guides:
       - guides/index.md
+      - Using Claude Code: guides/claude-code-use.md
+      - Claude Code Skills: guides/claude-code-skills.md
       - Claude Code on Windows: guides/claude-code-windows.md
   - About: about.md
