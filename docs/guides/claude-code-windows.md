@@ -1,6 +1,12 @@
 ---
+title: 'A Complete Setup and Guide for Claude Code on Windows'
+description: 'A practical Windows setup guide for Claude Code, terminal tooling, shell integration, and workflow polish.'
 created: 2026-02-10
 updated: 2026-05-13
+tags:
+  - Claude Code
+  - Windows
+  - Developer Workflow
 ---
 
 # A Complete Setup and Guide for Claude Code on Windows

@@ -1,6 +1,12 @@
 ---
+title: 'Your "Agency" is the Only Thing AI Cannot Replicate'
+description: 'A reflection on human agency, generalists, and personal autonomy in the age of AI.'
 created: 2026-04-12
-updated: 2026-04-22
+updated: 2026-04-12
+tags:
+  - AI
+  - Agency
+  - Future of Work
 ---
 
 # Your "Agency" is the Only Thing AI Cannot Replicate

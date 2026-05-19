@@ -1,7 +1,9 @@
 site_name: Jamz's Space
 site_url: https://jamzspace.com/
+site_description: Personal notes on AI, developer workflows, automation, and independent thinking.
+site_author: Jamz
 
-copyright: 'Copyright &copy; 2026 <a href="https://jamzspace.com">jamz</a>. All rights reserved.'
+copyright: 'Copyright &copy; 2025 - 2026 <a href="https://jamzspace.com">jamz</a>. All rights reserved.'
 
 extra:
   generator: false # 去掉默认的 MkDocs 生成器标签，保持页面简洁
@@ -20,6 +22,7 @@ theme:
   name: material
   custom_dir: overrides
   font: false # 关闭 Google Fonts 默认加载，由 extra.css 接管（霞鹜文楷 + EB Garamond）
+  logo: assets/logo.svg
   favicon: assets/favicon.svg
   palette:
     # 浅色模式
@@ -38,34 +41,34 @@ theme:
     - navigation.tabs # 开启顶部标签页横向导航
     - navigation.indexes # 将分组里的 index.md 作为章节首页，不在侧边栏重复显示
     - navigation.top # 开启右下角“返回顶部”按钮
+    - navigation.footer # 上一篇 / 下一篇文章导航
     - content.code.copy # 为代码块添加复制按钮
+    - content.code.annotate # 支持代码注释标记
 
 extra_css:
   - stylesheets/extra.css
 
-# 核心：多语言多目录配置
-# 核心：多语言多目录配置（补充了新版强制要求的 default 标签）
 plugins:
   - i18n:
       languages:
         - locale: en
           name: English
-          default: true # 必须明确标记出谁是默认语言！
+          default: true
           build: true
         - locale: zh
           name: 简体中文
-          default: false # 中文不是默认语言，设为 false
+          default: false
           build: true
 
 # 导航结构（中英文共用一套框架，路径会自动根据语言映射）
 nav:
-  - Home:
-      - index.md
-      - Take Back Your Control: home/page1.md
-      - From "Step-by-Step" to "Self-Reflection": home/page2.md
-      - Building the Ultimate Workflow: home/page3.md
-  # - articles:
-  #     - Articles: articles/index.md
-  #     - Tech: articles/tech.md
-  #     - Life: articles/life.md
+  - Home: index.md
+  - Essays:
+      - essays/index.md
+      - Efficiency Inflation: essays/efficiency-inflation.md
+      - Agency in the AI Era: essays/agency-ai-era.md
+      - Chain of Thought Evolution: essays/cot-evolution.md
+  - Guides:
+      - guides/index.md
+      - Claude Code on Windows: guides/claude-code-windows.md
   - About: about.md

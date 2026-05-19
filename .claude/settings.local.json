@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m mkdocs build --strict)",
+      "Bash(python -m mkdocs build)"
+    ]
+  }
+}

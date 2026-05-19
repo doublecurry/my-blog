@@ -1,13 +1,19 @@
 ---
+title: 'The Evolution of Large Model Chain of Thought'
+description: 'A structured overview of Chain of Thought, self-consistency, Tree of Thoughts, and agentic reasoning patterns.'
 created: 2026-03-17
 updated: 2026-03-20
+tags:
+  - AI
+  - Reasoning
+  - Prompt Engineering
 ---
 
 # The Evolution of Large Model Chain of Thought (CoT)
 
 In the rapid development of artificial intelligence, people have always expected large models to "emerge" with high-level intelligence akin to humans once their parameter count breaches a certain threshold. However, simply stacking parameters and burning money for computing power does not necessarily guarantee that AI will truly master complex logical reasoning. The critical key that allowed large models to achieve a qualitative leap in logical, mathematical, and decision-making capabilities is a prompt engineering technique called "Chain of Thought" (CoT).
 
-## What is Chain of Thought (CoT)?
+## What is CoT?
 
 If traditional large models are "buzzers" that rely on intuition for Input $\rightarrow$ Output mapping, then CoT forces the model to clearly write down the intermediate "solution steps" before giving the final answer.
 

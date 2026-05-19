@@ -82,7 +82,7 @@ body {
 }
 
 .md-typeset {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.85;
   color: var(--md-typeset-color);
 }
@@ -215,13 +215,21 @@ body {
   color: inherit;
 }
 
-/* 深色模式：logo 用更亮的米黄，避免与深背景糊在一起 */
+/* 深色模式：logo.svg 以 img 方式加载时不会可靠继承 currentColor，直接做亮色滤镜 */
 [data-md-color-scheme="slate"] .md-header__button.md-logo {
-  color: #e6e1d6;
+  color: #f4ead7;
+}
+
+[data-md-color-scheme="slate"] .md-header__button.md-logo img {
+  filter: invert(93%) sepia(10%) saturate(501%) hue-rotate(350deg) brightness(104%) contrast(92%);
 }
 
 [data-md-color-scheme="slate"] .md-header__button.md-logo:hover {
   color: var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-header__button.md-logo:hover img {
+  filter: invert(73%) sepia(37%) saturate(481%) hue-rotate(2deg) brightness(91%) contrast(87%);
 }
 
 /* ---------- 顶部导航 Tabs：极简 ---------- */
@@ -708,3 +716,201 @@ article a:focus {
     font-size: 1.25rem;
   }
 }
+
+/* ============================================================
+   Home / index — quiet personal landing
+   ============================================================ */
+.md-typeset .home-intro,
+.md-typeset .home-section {
+  margin: 0 0 2.6rem;
+}
+
+.md-typeset .home-intro {
+  padding: 0.4rem 0 1.6rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .home-intro h1 {
+  margin: 0 0 0.9rem;
+  border: 0;
+  font-size: clamp(1.6rem, 3.4vw, 2.1rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.md-typeset .home-intro p {
+  max-width: 38rem;
+  margin: 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.95rem;
+  line-height: 1.85;
+  text-align: left;
+}
+
+.md-typeset .home-section h2 {
+  margin: 0 0 1.1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .home-more {
+  margin: 1.4rem 0 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.85rem;
+}
+
+.md-typeset .article-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+
+.md-typeset .article-row {
+  display: grid;
+  gap: 0.3rem;
+  padding: 1rem 0;
+  color: inherit !important;
+  text-decoration: none;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  transition: border-color 0.24s ease, padding-left 0.24s ease;
+}
+
+.md-typeset .article-row:first-child {
+  border-top: 0;
+}
+
+.md-typeset .article-row:last-child {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .article-row:hover,
+.md-typeset .article-row:focus-visible {
+  border-color: var(--md-accent-fg-color);
+  padding-left: 0.4rem;
+  outline: none;
+}
+
+.md-typeset .article-row span {
+  color: var(--md-accent-fg-color);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.md-typeset .article-row strong {
+  color: var(--md-default-fg-color);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.md-typeset .article-row small {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+  line-height: 1.65;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .home-intro h1 {
+    font-size: 1.5rem;
+  }
+
+  .md-typeset .home-intro p {
+    font-size: 0.92rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .article-row {
+    transition: none;
+  }
+
+  .md-typeset .article-row:hover,
+  .md-typeset .article-row:focus-visible {
+    padding-left: 0;
+  }
+}
+
+/* ---------- Home interactive links: isolate from global article-link underline styles ---------- */
+.md-typeset a.article-row,
+.md-typeset a.article-row:link,
+.md-typeset a.article-row:visited {
+  margin: 0;
+  padding: 1rem 0;
+  background-color: transparent;
+  text-decoration: none !important;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 0;
+}
+
+.md-typeset a.article-row:first-child,
+.md-typeset a.article-row:first-child:link,
+.md-typeset a.article-row:first-child:visited {
+  border-top: 0;
+}
+
+.md-typeset a.article-row:last-child,
+.md-typeset a.article-row:last-child:link,
+.md-typeset a.article-row:last-child:visited {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset a.article-row:hover,
+.md-typeset a.article-row:focus-visible {
+  background-color: transparent;
+  outline: none;
+}
+
+.md-typeset a.article-row:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ---------- Content links: same restrained style as copyright links ---------- */
+.md-content .md-typeset a:not(.article-row):not(.headerlink):not(.footnote-ref):not(.md-button),
+.md-content .md-typeset a:not(.article-row):not(.headerlink):not(.footnote-ref):not(.md-button):link,
+.md-content .md-typeset a:not(.article-row):not(.headerlink):not(.footnote-ref):not(.md-button):visited {
+  color: var(--md-default-fg-color--light) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: color 0.24s ease, border-color 0.24s ease, background-color 0.24s ease;
+}
+
+.md-content .md-typeset a:not(.article-row):not(.headerlink):not(.footnote-ref):not(.md-button):hover,
+.md-content .md-typeset a:not(.article-row):not(.headerlink):not(.footnote-ref):not(.md-button):focus-visible {
+  color: var(--md-accent-fg-color) !important;
+  text-decoration: none !important;
+  border-bottom-color: var(--md-accent-fg-color);
+  background-color: var(--md-accent-fg-color--transparent);
+  outline: none;
+}
+
+.md-content .md-typeset a:not(.article-row):not(.headerlink):not(.footnote-ref):not(.md-button):focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ---------- Footer social links: only restore missing bottom edge, keep original shape ---------- */
+.md-footer .md-social__link,
+.md-footer .md-social__link:link,
+.md-footer .md-social__link:visited,
+.md-footer .md-footer-meta.md-typeset .md-social__link,
+.md-footer .md-footer-meta.md-typeset .md-social__link:link,
+.md-footer .md-footer-meta.md-typeset .md-social__link:visited {
+  border-bottom-color: var(--md-default-fg-color--lightest) !important;
+}
+
+.md-footer .md-social__link:hover,
+.md-footer .md-social__link:focus-visible,
+.md-footer .md-footer-meta.md-typeset .md-social__link:hover,
+.md-footer .md-footer-meta.md-typeset .md-social__link:focus-visible {
+  border-bottom-color: var(--md-accent-fg-color) !important;
+}
+
