@@ -10,8 +10,8 @@ Longer pieces — usually things I'm trying to work out by writing them down.
 <div class="article-list">
   <a class="article-row" href="efficiency-inflation/">
     <span>AI · Strategy</span>
-    <strong>The Era of Efficiency Inflation: Rebuilding Your Moat When "Building" Is No Longer the Barrier</strong>
-    <small>Where scarcity goes when AI makes building cheap — taste, orchestration, and proprietary data.</small>
+    <strong>The Era of Efficiency Inflation: What Becomes Scarce When AI Makes Building Cheap</strong>
+    <small>Where scarcity migrates when AI compresses the cost of building — product judgment, distribution, data, and the bifurcation of technical depth.</small>
   </a>
   <a class="article-row" href="agency-ai-era/">
     <span>AI · Agency</span>
