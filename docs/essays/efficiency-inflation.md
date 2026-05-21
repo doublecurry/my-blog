@@ -1,88 +1,87 @@
 ---
-title: 'The Era of Efficiency Inflation: How to Rebuild Your Moat When "Building" Is No Longer the Barrier'
-description: 'On where scarcity goes when AI makes building cheap — product taste, orchestration, and ownership of distribution and data.'
+title: 'The Era of Efficiency Inflation: What Becomes Scarce When AI Makes Building Cheap'
+description: 'On where scarcity migrates when AI compresses the cost of building — product judgment, the right questions, distribution and data, and the bifurcation of technical depth.'
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-05-22
 tags:
   - AI
   - Future of Work
   - Strategy
 ---
 
-# How to Rebuild Your Moat When "Building" Is No Longer the Barrier
+# What Becomes Scarce When AI Makes Building Cheap
 
-If a software project that once required a full team of frontend, backend, QA, and UI designers several months to complete can now be delivered as a Minimum Viable Product (MVP) by a single developer leveraging AI in just weeks or days, we have entered a historic paradigm shift in productivity. Following this is a "productivity inflation" that is sweeping across all knowledge-based labor.
+When the cost of "how to build" is dramatically compressed by AI, the real scarcity naturally migrates toward **what to build**, **why build it**, and **who gets to see it**.
 
-When the cost of "how to build" approaches zero, our once-proud assets—the number of lines of code written, the rote memorization of API documentation, and the "brute-force execution" of trading time for progress—are rapidly depreciating.
+This shift can be compared to the evolution of photography. It once required developing film, mastering darkroom techniques, and operating complex equipment — only a trained professional could produce a sharp image. Today, anyone with a smartphone can take a high-resolution photo in a moment. At that point, scarcity is no longer the technical ability to capture a clear photo; it becomes the photographer's vision, taste, and expressive ability, along with the channel that lets the world see the photo.
 
-In this new technological era, the world no longer rewards the mere "Builder." It rewards the "Director" and the "Explorer." The scarcity of technical value is undergoing a profound restructuring.
-
----
-
-## I. Depreciating Assets: The "Translators" and "Transporters" of the Middle Layer
-
-For the past two decades, the software industry has been filled with roles often termed "CRUD Engineers" or "Business Logic Translators." The core of this work involves reading requirement documents from product managers and translating them into standard code within specific frameworks (e.g., Spring, React, Vue), while managing database operations.
-
-Today, this capability is the first to be fully commoditized by AI. Large Language Models (LLMs) have consumed nearly all open-source framework source code and best practices, and they can generate boilerplate code at speeds and accuracy levels that humans cannot match.
-
-It is not just coding; the traditional "brute-force execution" model is collapsing. In the past, the universal solution to a project falling behind schedule was "add more people, add more time." In the AI era, execution is redefined as **"Engineering and Orchestration"**—designing automated workflows where AI agents perform tasks stably, rather than relying on humans to grind through keyboard hours.
+In the AI era, the scarcity of technical value is undergoing the same profound restructuring.
 
 ---
 
-## II. The Scarcity of Soft Power: Business Intuition and Taste
+## I. The most scarce — product judgment and business understanding (deciding "what to build")
 
-When anyone can easily build a wheel, the world becomes flooded with wheels. The real problem shifts to: **Where should this vehicle go? Why build it? And who will actually buy it?**
+This is the most core threshold today. AI holds an enormous body of knowledge, but it has not lived in the real world. It does not feel the friction of corporate approval flows, the hesitation of an ordinary user one step before clicking "buy", or the interests and power dynamics inside a complex organization.
 
-### 1. Deep Business Insight and Product Judgment
-
-AI possesses the sum of human knowledge scraped from the internet, but it has never "lived" in the real world. It cannot feel the bureaucratic friction of corporate approval processes, the frustration of a retail clerk clicking a screen one too many times during checkout, or the subtle power dynamics within complex business organizations.
-
-Genuine pain points are often hidden in these irrational, undocumented folds of reality.
-
-* **Business insight** determines whether you can uncover real, monetizable problems.
-* **Product judgment** determines your ability to show restraint. When "adding a feature" is just a single prompt away, knowing "what NOT to build" is infinitely more valuable than knowing "how to build everything."
-
-### 2. The Ability to Ask the Right Questions (System Vision)
-
-If AI development is like filmmaking, the developer is now the "Director." The director doesn't need to hold the camera or adjust the lighting, but they must have a high-resolution vision of the final product in their mind.
-
-When AI outputs code that runs well but lacks architectural integrity, can you spot the hidden risks? Can you guide it toward a higher standard with precise, constrained prompts? Asking the right questions requires high technical taste and a macro-systemic view. Without this vision, a human plus AI will only produce "industrial-grade garbage" at an unprecedented speed.
+* **Business understanding** provides the real pain points, scenarios, and hidden logic that lie outside any document.
+* **Product judgment** decides the boundaries and trade-offs of a solution. In an age when anything can be built, knowing "what should not be built" is far more valuable than knowing "how to build it all".
 
 ---
 
-## III. The Bifurcation of Technical Depth: Upward Orchestration vs. Downward Deep Dives
+## II. Highly scarce — the ability to ask the right question (questioning and decision)
 
-As the middle layer of development is flattened, "technical depth" hasn't vanished—it has bifurcated into two extremes. To build an uncrossable moat, you must choose one of these paths.
+Asking a good question is, at its core, **systematic questioning plus high-standard decision-making**.
 
-### 1. Moving Upward: Becoming an Orchestration Architect
-
-These developers move beyond syntax or framework-specific implementation to focus on "system and business chains." They treat AI as a non-deterministic component within a larger system. Their core challenges include:
-
-* Constraining the unstable output of LLMs into the deterministic flows of traditional business logic.
-* Integrating disparate tools (payment gateways, automation scripts, SaaS APIs) seamlessly through RAG (Retrieval-Augmented Generation) and Agentic Workflows.
-* Designing fault-tolerance mechanisms to ensure the system degrades gracefully rather than collapsing when the AI hallucinates.
-
-### 2. Moving Downward: Mastering Extremes and Non-Standard Environments
-
-If grand business narratives don't entice you, another path lies in the deep, dark ocean—the areas AI cannot learn from GitHub.
-
-* **Reverse Engineering and System Security:** Analyzing binary files without source code, dynamic debugging, and rewriting assembly instructions. This requires human "intuition" and trial-and-error in complex contexts—a blind spot for LLMs.
-* **Extreme Performance Optimization:** Pushing hardware to its limits, writing drivers for niche ecosystems, or performing quantization and pruning to force large models into restricted memory environments.
-* **Solving Complex Legacy Dependencies:** Unraveling ancient systems with missing documentation and tangled network topologies.
+When one person can rely on AI to complete an entire project, their role shifts from "frontline executor" to "general director". A director does not need to operate the camera, but must be able to picture the final product clearly in their mind. When AI returns a mediocre, biased, or incomplete intermediate result, they need to sense the problem quickly and correct and elevate it through precise instructions. Without high standards and sound decisions, one person plus AI will only mass-produce "industrial garbage" at higher efficiency.
 
 ---
 
-## IV. The Final Frontier: Ownership of Distribution and Data
+## III. Highly scarce — resources along specific dimensions (distribution channels and proprietary data)
 
-When the mystique of technology is stripped away, software development returns to the essence of business. In an age of explosive productivity, the competitive endgame shifts toward "hard assets."
+When the product development cycle is compressed from months to weeks, the market will inevitably be flooded with a huge number of feature-similar applications. Winning on the product itself alone becomes increasingly difficult.
 
-* **Distribution Channels (Attention Resources):** When supply is infinite, user attention is the scarcest resource. Do you have low-cost access to your target audience? Do you have a loyal community? Do you possess personal brand trust? Technology alone cannot bridge the gap to the market.
-* **Proprietary Data:** General LLM inference is a utility (like water or electricity). The real moat is the industry-specific, private data you possess—information that has never been public on the internet. Whether it is a niche expert knowledge base or the flywheel data generated by your users, this "dark data" is your true defensive wall.
+* **Distribution capability (attention as a resource):** Who can reach the customer, who controls the sales network, who holds user trust — that party sits at the most upstream position of the commercial loop.
+* **Proprietary data:** Basic reasoning from AI is universally available. What truly lets a product build a moat is the previously unpublished, high-value industry-private data — niche expert knowledge bases, or the flywheel data generated by your own users.
 
 ---
 
-## Conclusion
+## IV. Value reshaped — technical depth bifurcates
 
-We are witnessing a monumental paradigm shift. In this process, technology is no longer the destination; it is the instrument. Code is no longer an asset; it is a cost.
+Generic code writing, mainstream framework usage, and standard engineering scaffolding are no longer scarce. But technical depth has not lost its value; it has split toward two extremes:
 
-Stop asking, "What language should I learn?" and start asking, "What problem can I solve?" Whether you choose to become an architect with a keen business sense or a hardcore hacker solving extreme technical enigmas, only by transforming your cognitive identity can you evolve from a replaceable "tool" into an "engine" that drives the era forward.
+* **Upward (global architecture capability):** Integrating multiple AI models and complex external systems; solving compatibility, fault tolerance, and high availability between components; constraining the non-deterministic output of LLMs inside deterministic business flows.
+* **Downward (low-level hardcore optimization):** Going deep into memory management, low-level compilation, and performance squeezing on specific hardware, or addressing the real-world stability and hallucination defects of large models.
+
+The technical workforce in the middle layer will be replaced in large numbers.
+
+---
+
+## V. Currently depreciating — traditional execution (piling on manpower)
+
+The "willpower-driven execution" that relied on pure hand-coding and piling people on to race the schedule is being flattened. In the past, the default fix for a project running behind was "add more people, add more time". Future execution will be redefined as **AI orchestration and engineering capability** — how to design efficient automated workflows so that machines stably perform the tasks that once required armies of people.
+
+---
+
+## Where should you push from here?
+
+In this transition from "builder" to "director", if you want to establish personal irreplaceability, which of the scarce capabilities above is the most urgent for you to push toward right now? Facing such a broad question, it is normal not to know where to start. At its core, this is a process of **re-routing personal coordinates**. The most actionable approach is to start from your existing technical background and ask: which path is closest to where you already stand, and let that decide the immediate priority.
+
+### Path 1 — Dig into the low level and into messy environments (vertical technical depth)
+
+AI can produce a standard Spring Boot endpoint or a generic component for a modern frontend framework in seconds, but it is least good at non-standard, undocumented environments that require debugging intuition.
+
+If you are interested in dissecting low-level logic — analyzing binary files via decompilation, observing software behavior through memory breakpoints or by modifying assembly instructions; or working inside a non-mainstream hardware ecosystem, for example configuring ROCm on AMD GPUs and focusing on the local deployment and inference optimization of large models — that is one of the widest moats available.
+
+**The pressing point:** build the ability to solve hardcore engineering problems that AI cannot solve by searching open-source code. This covers system-level security, reverse engineering, low-level compilation optimization, and performance squeezing in rare or constrained environments.
+
+### Path 2 — Evolve from "static development" toward "system orchestration" (product judgment fused with execution)
+
+If you have already mastered full-stack development and can use scripts and image recognition to build complex automated workflows, you already hold the technical prototype of a "super individual". The key now is to jump from "receive a requirement and write code" toward "design an automated closed loop".
+
+In software markets that are sensitive to labor cost and intensely competitive — for example Europe or Hong Kong — the value of a pure "code translator" is being diluted. Companies are more willing to pay solution experts who understand business pain points and can seamlessly integrate multiple AI capabilities with automated workflows.
+
+**The pressing point:** train business-vision-driven decision-making. Stop checking off technical task lists and start asking: inside this business process, which steps can be fully taken over by automation scripts, which steps must call an LLM for dynamic decision-making, and how should the whole thing be designed so that the user experience feels smooth?
+
+---
+
+Of these two paths, one is becoming **a hardcore expert who solves extreme and complex problems**; the other is becoming **a super architect / independent developer who understands business and orchestrates AI models**. Both occupy positions the middle layer can no longer hold.
