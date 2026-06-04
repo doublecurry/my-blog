@@ -23,4 +23,9 @@ Setup notes and workflows I've sorted out for myself, in case any of it saves so
     <strong>Claude Code on Windows: A Complete Setup</strong>
     <small>Terminal, shell integration, and workflow polish for AI-assisted development.</small>
   </a>
+  <a class="article-row" href="pi-package-ecosystem/">
+    <span>Pi · Package Setup</span>
+    <strong>Building a Lean AI Coding Assistant: My Pi Package Setup</strong>
+    <small>A hands-on walkthrough of configuring pi's package ecosystem — context compression, code search, safety gates, and custom tooling.</small>
+  </a>
 </div>

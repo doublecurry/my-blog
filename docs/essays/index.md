@@ -10,7 +10,7 @@ Longer pieces — usually things I'm trying to work out by writing them down.
 <div class="article-list">
   <a class="article-row" href="efficiency-inflation/">
     <span>AI · Strategy</span>
-    <strong>The Era of Efficiency Inflation: What Becomes Scarce When AI Makes Building Cheap</strong>
+    <strong>What Becomes Scarce When AI Makes Building Cheap</strong>
     <small>Where scarcity migrates when AI compresses the cost of building — product judgment, distribution, data, and the bifurcation of technical depth.</small>
   </a>
   <a class="article-row" href="agency-ai-era/">

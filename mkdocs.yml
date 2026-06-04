@@ -73,6 +73,7 @@ nav:
       - Using Claude Code: guides/claude-code-use.md
       - Claude Code Skills: guides/claude-code-skills.md
       - Claude Code on Windows: guides/claude-code-windows.md
+      - Pi Package Ecosystem: guides/pi-package-ecosystem.md
   - About: about.md
 
 markdown_extensions:
