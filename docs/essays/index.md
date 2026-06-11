@@ -23,4 +23,9 @@ Longer pieces — usually things I'm trying to work out by writing them down.
     <strong>The Evolution of Chain of Thought</strong>
     <small>From CoT prompting to self-consistency, Tree of Thoughts, and agentic loops.</small>
   </a>
+  <a class="article-row" href="llm-router-security/">
+    <span>AI · Security</span>
+    <strong>Your Agent Runs Through Someone Else's Code</strong>
+    <small>LLM API routers sit between your prompts and the model. That position is a security catastrophe waiting to happen.</small>
+  </a>
 </div>

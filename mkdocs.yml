@@ -68,6 +68,7 @@ nav:
       - Efficiency Inflation: essays/efficiency-inflation.md
       - Agency in the AI Era: essays/agency-ai-era.md
       - Chain of Thought Evolution: essays/cot-evolution.md
+      - LLM Router Security: essays/llm-router-security.md
   - Guides:
       - guides/index.md
       - Using Claude Code: guides/claude-code-use.md
